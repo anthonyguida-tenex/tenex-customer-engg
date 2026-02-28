@@ -374,9 +374,9 @@
         <svg width="68" height="68" viewBox="0 0 68 68">
           <circle cx="34" cy="34" r="28" fill="none" stroke="rgba(0,201,200,0.1)" stroke-width="5"/>
           <circle cx="34" cy="34" r="28" fill="none" stroke="#00C9C8" stroke-width="5"
-            stroke-dasharray="175.9" stroke-dashoffset="17.6" stroke-linecap="round"/>
+            stroke-dasharray="175.9" stroke-dashoffset="0" stroke-linecap="round"/>
         </svg>
-        <span class="ring-pct">90%</span>
+        <span class="ring-pct">100%</span>
       </div>
       <div class="ring-label">Complete</div>
     </div>
@@ -544,14 +544,16 @@
     </div>
 
     <!-- Phase 4 -->
-    <div class="phase-block active open" onclick="togglePhase(this)">
+    <div class="phase-block done" onclick="togglePhase(this)">
       <div class="phase-header">
-        <div class="check check-active"><div class="check-dot"></div></div>
+        <div class="check check-done">
+          <svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
         <div class="phase-info">
           <div class="phase-num">Phase 04</div>
           <div class="phase-title">Agentic SOC POV Validation</div>
         </div>
-        <div class="phase-count count-active">4 / 5 Complete</div>
+        <div class="phase-count count-done">5 / 5 Complete</div>
         <svg class="chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div class="phase-content">
@@ -565,8 +567,8 @@
             <div class="item-check item-check-done"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
             <div><div class="item-title">Agent-Led Investigation & Context Building</div><div class="item-sub">Automated enrichment across identity, endpoint, cloud, network, email, and data.</div></div>
           </div>
-          <div class="item">
-            <div class="item-check item-check-partial"></div>
+          <div class="item item-done">
+            <div class="item-check item-check-done"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
             <div><div class="item-title">Ransomware Detection & Containment</div><div class="item-sub">Early-stage ransomware indicators, lateral movement, and privilege escalation with guided containment.</div></div>
           </div>
           <div class="item item-done">
